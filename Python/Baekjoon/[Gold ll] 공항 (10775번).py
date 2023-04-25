@@ -1,22 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
-import sys
-input = sys.stdin.readline
-
-def find(x):
-    if parent[x] == x:
-        return x
-    parent[x]=find(parent[x])
-    return parent[x]
-
-def union(a, b): 
-    a = find(a) 
-    b = find(b) 
-
 import sys
 input = sys.stdin.readline
 
